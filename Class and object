@@ -1,1 +1,102 @@
+code 1:
+class Student {
+    int id;
+    String name;
+    void display() {
+        System.out.println("ID: " + id + ", Name: " + name);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        s1.id = 101;
+        s1.name = "Manoj";
+        s1.display();
+    }
+}
+---------------------------------------------------------
+code 2:
+class Book {
+    String title;
+    String author;
+ Book(String t, String a) {
+        title = t;
+        author = a;
+    }
+ void show() {
+        System.out.println("Title: " + title + ", Author: " + author);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Book b1 = new Book("Java Basics", "James Gosling");
+        Book b2 = new Book("Spring Boot", "Rod Johnson");
+
+        b1.show();
+        b2.show();
+    }
+}
+-----------------------------------------------------------
+code 3:
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+int multiply(int x, int y) {
+        return x * y;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println("Sum: " + calc.add(5, 10));
+        System.out.println("Product: " + calc.multiply(4, 6));
+    }
+}
+------------------------------------------------------------------
+code 4:
+class Dog {
+    String breed;
+    int age;
+
+    void bark() {
+        System.out.println(breed + " is barking!");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Dog d1 = new Dog();
+        d1.breed = "Labrador";
+        d1.age = 5;
+        d1.bark();  
+    }
+}
+------------------------------------------------------------------------
+code 5:
+class Rectangle {
+    int length;
+    int width;
+    void setDimensions(int l, int w) {
+        length = l;
+        width = w;
+    }
+    int getArea() {
+        return length * width;
+    }
+    int getPerimeter() {
+        return 2 * (length + width);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Rectangle rect = new Rectangle();
+        rect.setDimensions(5, 3);
+        System.out.println("Area: " + rect.getArea());
+        System.out.println("Perimeter: " + rect.getPerimeter());
+    }
+}
+------------------------------------------------------------------------
+
+
+
 
